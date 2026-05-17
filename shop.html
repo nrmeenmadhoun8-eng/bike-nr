@@ -1,0 +1,358 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Bike Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="top-bar">
+        <div class="top-left">envato market</div>
+        <div class="top-text">Limited time offer, Buy XTRA WordPress theme only $29</div>
+        <a href="#" class="top-btn">Download XTRA Theme</a>
+      </div>
+      <div class="nav-bar">
+        <a href="./index.html" class="logo">
+          <img src="./image/icons8-bike-48.png" alt="">XTRA</a>
+          <button class="menu-toggle" id="menuToggle"> <i class="fa-solid fa-bars"></i> </button>
+          <ul class="menu" id="mainMenu">
+            <li>
+              <a href="./index.html">Home</a>
+            </li>
+            <li class="has-drop">
+              <a href="./about.html">About <i class="fa-solid fa-angle-down"></i> </a>
+          <div class="drop-menu">
+            <a href="./about.html">Submenu 1</a>
+            <a href="./services.html">Dropdown menu</a>
+            <a href="./faq.html">Submenu 2</a>
+          </div>
+        </li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a class="active" href="./shop.html">Shop</a></li>
+        <li><a href="./faq.html">FAQ</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="./contact.html" class="help-btn"> <i class="fa-solid fa-bicycle"></i> Help &amp; Service</a>
+          <a href="#" class="icon-btn"> <i class="fa-regular fa-heart"></i> </a>
+          <a href="./shop.html" class="icon-btn"> <i class="fa-solid fa-bag-shopping"></i> </a>
+        </div>
+      </div>
+    </header>
+    <main class="shop-page">
+      <div class="shop-path"> <i class="fa-solid fa-house"></i> 
+        <i class="fa-solid fa-bicycle"></i>
+        <span>Products</span>
+      </div>
+      <section class="shop-head">
+        <div>
+          <h1 class="shop-title">Shop</h1>
+          <p class="shop-count">Showing 1-6 of 8 results</p>
+        </div>
+        <div class="shop-actions">
+          <div class="view-buttons">
+            <button class="view-btn" title="Two columns"> <i class="fa-solid fa-grip"></i> </button>
+            <button class="view-btn active" title="Three columns"> <i class="fa-solid fa-table-cells-large"></i> </button>
+            <button class="view-btn" title="Four columns"> <i class="fa-solid fa-grip-vertical"></i> </button>
+          </div>
+          <select class="shop-select" id="productCount">
+            <option>6 Products</option>
+            <option>16 Products</option>
+            <option>32 Products</option>
+            <option>48 Products</option>
+            <option>64 Products</option>
+            <option>128 Products</option>
+          </select>
+          <select class="shop-select sort-select" id="sortProducts">
+            <option>Default</option>
+            <option>Popular</option>
+            <option>Featured</option>
+            <option>Top Rated</option>
+            <option>Relevance</option>
+            <option>Sort by latest</option>
+            <option>Sort by oldest</option>
+            <option>Price low to high</option>
+            <option>Price high to low</option>
+            <option>Highest Discount</option>
+            <option>Lowest Discount</option>
+            <option>Alphabetically, A-Z</option>
+            <option>Alphabetically, Z-A</option>
+          </select>
+        </div>
+      </section>
+      <section class="shop-tabs">
+        <button class="shop-tab active" data-kind="all">
+          <span> <i class="fa-solid fa-store"></i> </span>
+          <b>All Products</b>
+          <small>8 Items</small>
+        </button>
+        <button class="shop-tab" data-kind="cannondale">
+          <span> <i class="fa-regular fa-folder"></i> </span>
+          <b>Cannondale</b>
+          <small>5 Items</small>
+        </button>
+        <button class="shop-tab" data-kind="orbea">
+          <span> <i class="fa-regular fa-folder"></i> </span>
+          <b>Orbea</b>
+          <small>4 Items</small>
+        </button>
+        <button class="shop-tab" data-kind="premium">
+          <span> <i class="fa-regular fa-folder"></i> </span>
+          <b>Premium Sets</b>
+          <small>3 Items</small>
+        </button>
+        <button class="shop-tab" data-kind="limited">
+          <span> <i class="fa-regular fa-folder"></i> </span>
+          <b>Limited Edition</b>
+          <small>3 Items</small>
+        </button>
+        <button class="shop-tab" data-kind="exclusive">
+          <span> <i class="fa-regular fa-folder"></i> </span>
+          <b>Exclusive</b>
+          <small>3 Items</small>
+        </button>
+      </section>
+      <section class="shop-grid" id="shopGrid">
+        <article class="shop-card" data-kind="premium" data-name="Discover 2 Step-Thru" data-price="768">
+          <div class="sale-tags">
+            <span>Sale!</span>
+            <span>22%</span>
+          </div>
+          <div class="shop-img">
+            <img src="./image/4.png" alt="Discover 2 Step-Thru">
+            <div class="shop-icons">
+              <a href="#"> <i class="fa-regular fa-heart"></i> </a>
+              <a href="#"> <i class="fa-solid fa-shuffle"></i> </a>
+              <a href="#"> <i class="fa-solid fa-magnifying-glass"></i> </a>
+            </div>
+          </div>
+          <p class="hot-text">HOT SALE 22% OFF HOT SALE 22% OFF </p>
+          <h2>Discover 2 Step-Thru</h2>
+          <p class="shop-brand">Premium Sets</p>
+          <div class="price-row">
+            <p>
+              <del>$980</del>
+              <b>$768</b>
+            </p>
+            <a href="#" class="cart-btn shop-cart"> <i class="fa-solid fa-cart-shopping"></i> Add to cart</a>
+            </div>
+          </article>
+          <article class="shop-card" data-kind="exclusive" data-name="Folding Electric Bike" data-price="1270">
+            <div class="shop-img">
+              <img src="./image/1.png" alt="Folding Electric Bike">
+              <div class="shop-icons">
+                <a href="#"> <i class="fa-regular fa-heart"></i> </a>
+                <a href="#"> <i class="fa-solid fa-shuffle"></i> </a>
+                <a href="#"> <i class="fa-solid fa-magnifying-glass"></i> </a>
+              </div>
+            </div>
+            <h2>Folding Electric Bike</h2>
+            <p class="shop-brand">Exclusive</p>
+            <div class="price-row">
+              <p>
+                <b>$1,270</b>
+              </p>
+              <a href="#" class="cart-btn shop-cart"> <i class="fa-solid fa-cart-shopping"></i> Add to cart</a>
+              </div>
+            </article>
+            <article class="shop-card" data-kind="cannondale" data-name="High Timber 24in" data-price="790">
+              <div class="shop-img">
+                <img src="./image/2.png" alt="High Timber 24in">
+                <div class="shop-icons">
+                  <a href="#"> <i class="fa-regular fa-heart"></i> </a>
+                  <a href="#"> <i class="fa-solid fa-shuffle"></i> </a>
+                  <a href="#"> <i class="fa-solid fa-magnifying-glass"></i> </a>
+                </div>
+              </div>
+              <h2>High Timber 24in</h2>
+              <p class="shop-brand">Cannondale</p>
+              <div class="price-row">
+                <p>
+                  <b>$790</b>
+                </p>
+                <a href="#" class="cart-btn shop-cart"> <i class="fa-solid fa-cart-shopping"></i> Add to cart</a>
+                </div>
+              </article>
+              <article class="shop-card" data-kind="cannondale" data-name="Hybrid Electric Bike" data-price="999">
+                <div class="shop-img">
+                  <img src="./image/3.png" alt="Hybrid Electric Bike">
+                  <div class="shop-icons">
+                    <a href="#"> <i class="fa-regular fa-heart"></i> </a>
+                    <a href="#"> <i class="fa-solid fa-shuffle"></i> </a>
+                    <a href="#"> <i class="fa-solid fa-magnifying-glass"></i> </a>
+                  </div>
+                </div>
+                <h2>Hybrid Electric Bike</h2>
+                <p class="shop-brand">Bianchi</p>
+                <div class="price-row">
+                  <p>
+                    <b>$999</b>
+                  </p>
+                  <a href="#" class="cart-btn shop-cart"> <i class="fa-solid fa-cart-shopping"></i> Add to cart</a>
+                  </div>
+                </article>
+                <article class="shop-card" data-kind="cannondale" data-name="Parkwood Electric Bike" data-price="980">
+                  <div class="shop-img">
+                    <img src="image/4.png" alt="Parkwood Electric Bike">
+                    <div class="shop-icons">
+                      <a href="#"> <i class="fa-regular fa-heart"></i> </a>
+                      <a href="#"> <i class="fa-solid fa-shuffle"></i> </a>
+                      <a href="#"> <i class="fa-solid fa-magnifying-glass"></i> </a>
+                    </div>
+                  </div>
+                  <h2>Parkwood Electric Bike</h2>
+                  <p class="shop-brand">Cannondale</p>
+                  <div class="price-row">
+                    <p>
+                      <b>$980</b>
+                    </p>
+                    <a href="#" class="cart-btn shop-cart"> <i class="fa-solid fa-cart-shopping"></i> Add to cart</a>
+                    </div>
+                  </article>
+                  <article class="shop-card" data-kind="orbea" data-name="Pro Bike Vortex" data-price="768">
+                    <div class="shop-img">
+                      <img src="image/2.png" alt="Pro Bike Vortex">
+                      <div class="shop-icons">
+                        <a href="#"> <i class="fa-regular fa-heart"></i> </a>
+                        <a href="#"> <i class="fa-solid fa-shuffle"></i> </a>
+                        <a href="#"> <i class="fa-solid fa-magnifying-glass"></i> </a>
+                      </div>
+                    </div>
+                    <h2>Pro Bike Vortex</h2>
+                    <p class="shop-brand">Cannondale</p>
+                    <div class="price-row">
+                      <p>
+                        <b>$768</b>
+                      </p>
+                      <a href="#" class="cart-btn shop-cart"> <i class="fa-solid fa-cart-shopping"></i> Add to cart</a>
+                      </div>
+                    </article>
+                  </section>
+                  <div class="shop-pages">
+                    <button class="active">1</button>
+                    <button>2</button>
+                    <button> <i class="fa-solid fa-arrow-right"></i> </button>
+                  </div>
+                </main>
+                <section class="foot-top">
+                  <div class="foot-top-box">
+                    <div class="top-col">
+                      <p class="top-small">Pre-sale Questions</p>
+                      <h3 class="top-big">help@xtrabicycle.com</h3>
+                    </div>
+                    <div class="top-col line-col">
+                      <p class="top-small">Call Us</p>
+                      <h3 class="top-big">+1800 2345 6789</h3>
+                    </div>
+                    <div class="top-col line-col">
+                      <p class="top-small">Our Location</p>
+                      <h3 class="top-big">#2354, Beverly Hills, LA</h3>
+                    </div>
+                  </div>
+                </section>
+                <footer class="main-foot">
+                  <div class="foot-grid">
+                    <div class="foot-col">
+                      <h4 class="foot-head">Office</h4>
+                      <div class="head-line">
+                      </div>
+                      <ul class="office-list">
+                        <li>
+                          <i class="fa-solid fa-location-dot"></i>121 King Street, NewYork</li>
+                          <li>
+                            <i class="fa-solid fa-phone"></i>+1 (800) 333 44 55</li>
+                            <li>
+                              <i class="fa-solid fa-envelope"></i>xtrabike@gmail.com</li>
+                              <li>
+                                <i class="fa-solid fa-calendar-days"></i>+1 (800) 333 99 88</li>
+                                <li>
+                                  <i class="fa-solid fa-x"></i>@xtra_bikeshop</li>
+                                </ul>
+                              </div>
+                              <div class="foot-col">
+                                <h4 class="foot-head">News</h4>
+                                <div class="head-line">
+                                </div>
+                                <div class="news-item">
+                                  <img src="./image/3d-bicycle-minimalist-design (2).jpg" class="news-thumb" alt="">
+                                  <div>
+                                    <p class="n-title">Top 7 Must have Accessories for Every Cyclist</p>
+                                    <p class="n-meta">10 June 2024&nbsp;&nbsp;24</p>
+                                  </div>
+                                </div>
+                                <div class="news-item">
+                                  <img src="image/2.png" class="news-thumb" alt="">
+                                  <div>
+                                    <p class="n-title">How to Choose the Perfect Bike for Your Lifestyle</p>
+                                    <p class="n-meta">10 June 2024&nbsp;&nbsp;18</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="foot-col">
+                                <h4 class="foot-head">Shortcuts</h4>
+                                <div class="head-line">
+                                </div>
+                                <div class="links-grid">
+                                  <ul>
+                                    <li>
+                                      <i class="fa-solid fa-angle-right"></i>Home</li>
+                                      <li>
+                                        <i class="fa-solid fa-angle-right"></i>City Store</li>
+                                        <li>
+                                          <i class="fa-solid fa-angle-right"></i>News</li>
+                                          <li>
+                                            <i class="fa-solid fa-angle-right"></i>Clients</li>
+                                            <li>
+                                              <i class="fa-solid fa-angle-right"></i>Support</li>
+                                            </ul>
+                                            <ul>
+                                              <li>
+                                                <i class="fa-solid fa-angle-right"></i>Maps</li>
+                                                <li>
+                                                  <i class="fa-solid fa-angle-right"></i>Careers</li>
+                                                  <li>
+                                                    <i class="fa-solid fa-angle-right"></i>Employees</li>
+                                                    <li>
+                                                      <i class="fa-solid fa-angle-right"></i>Teams</li>
+                                                      <li>
+                                                        <i class="fa-solid fa-angle-right"></i>Privacy</li>
+                                                      </ul>
+                                                    </div>
+                                                  </div>
+                                                  <div class="foot-col">
+                                                    <h4 class="foot-head">Working Hours</h4>
+                                                    <div class="head-line">
+                                                    </div>
+                                                    <p class="hours-text">Our support available to help you<br>24 hours a day, seven days a week.</p>
+                                                    <div class="hours-row">
+                                                      <span>Monday to Friday</span>
+                                                      <b>8AM - 4PM</b>
+                                                    </div>
+                                                    <div class="hours-row">
+                                                      <span>Saturday</span>
+                                                      <b>8AM - 1PM</b>
+                                                    </div>
+                                                    <div class="hours-row">
+                                                      <span>Sunday</span>
+                                                      <b>Closed</b>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </footer>
+                                              <div class="copy-bar">
+                                                <p>Copyright آ© 2026 Xtra Theme. All Rights Reserved.</p>
+                                                <div class="pay-logos"> <i class="fa-brands fa-cc-mastercard"></i> <i class="fa-brands fa-cc-paypal"></i> <i class="fa-brands fa-cc-amex"></i> <i class="fa-brands fa-cc-discover"></i> <i class="fa-brands fa-cc-amazon-pay"></i> <i class="fa-brands fa-cc-visa"></i>
+                                                </div>
+                                              </div>
+                                              <script src="./js/scrpit.js">
+                                              </script>
+                                            </body>
+                                          </html>
+

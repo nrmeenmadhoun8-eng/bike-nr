@@ -1,0 +1,257 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Bike Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="top-bar">
+        <div class="top-left">envato market</div>
+        <div class="top-text">Limited time offer, Buy XTRA WordPress theme only $29</div>
+        <a href="#" class="top-btn">Download XTRA Theme</a>
+      </div>
+      <div class="nav-bar">
+        <a href="./index.html" class="logo">
+          <img src="./image/icons8-bike-48.png" alt="">XTRA</a>
+          <button class="menu-toggle" id="menuToggle" aria-label="Open menu"> <i class="fa-solid fa-bars"></i> </button>
+          <ul class="menu" id="mainMenu">
+            <li>
+              <a href="./index.html">Home</a>
+            </li>
+            <li class="has-drop">
+              <a href="./about.html">About <i class="fa-solid fa-angle-down"></i> </a>
+          <div class="drop-menu">
+            <a href="./about.html">Submenu 1</a>
+            <a href="./services.html">Dropdown menu</a>
+            <a href="./faq.html">Submenu 2</a>
+          </div>
+        </li>
+        <li>
+          <a href="./services.html">Services</a>
+        </li>
+        <li>
+          <a href="./blog.html">Blog</a>
+        </li>
+        <li>
+          <a href="./shop.html">Shop</a>
+        </li>
+        <li>
+          <a href="./faq.html">FAQ</a>
+        </li>
+        <li>
+          <a class="active" href="./contact.html">Contact</a>
+        </li>
+      </ul>
+      <div class="nav-right">
+        <a href="./contact.html" class="help-btn"> <i class="fa-solid fa-bicycle"></i> Help &amp; Service</a>
+          <a href="#" class="icon-btn"> <i class="fa-regular fa-heart"></i> </a>
+          <a href="./shop.html" class="icon-btn"> <i class="fa-solid fa-bag-shopping"></i> </a>
+        </div>
+      </div>
+    </header>
+    <main class="contact-page">
+      <section class="contact-panel move-up">
+        <div class="contact-map" aria-label="Map location">
+          <iframe title="New York map" src="https://www.openstreetmap.org/export/embed.html?bbox=-74.0196%2C40.7048%2C-73.9890%2C40.7312&amp;layer=mapnik&amp;marker=40.7163%2C-74.0030">
+          </iframe>
+          <div class="map-pin"> <i class="fa-solid fa-bicycle"></i> </div>
+        </div>
+        <div class="contact-details">
+          <a class="contact-info" href="#">
+            <span class="contact-icon"> <i class="fa-solid fa-location-dot"></i> </span>
+            <span>
+              <b>Address</b>
+              <small>#2245, Los Angeles, CA</small>
+            </span></a>
+          <a class="contact-info" href="#">
+            <span class="contact-icon"> <i class="fa-solid fa-location-dot"></i> </span>
+            <span>
+              <b>Address 2</b>
+              <small>#1456, Manhattan, NY</small>
+            </span></a>
+          <a class="contact-info" href="tel:+18003334455">
+            <span class="contact-icon"> <i class="fa-solid fa-phone-volume"></i> </span>
+            <span>
+              <b>Phone</b>
+              <small>+1 (800) 333 4455</small>
+            </span></a>
+          <a class="contact-info" href="#">
+            <span class="contact-icon"> <i class="fa-solid fa-x"></i> </span>
+            <span>
+              <b>Social media</b>
+              <small>@xtra_theme_bike</small>
+            </span></a>
+          <a class="contact-info" href="#">
+            <span class="contact-icon"> <i class="fa-brands fa-facebook-f"></i> </span>
+            <span>
+              <b>Facebook</b>
+              <small>@xtratheme</small>
+            </span></a>
+          <a class="contact-info" href="mailto:support@yourwebsite.com">
+            <span class="contact-icon"> <i class="fa-regular fa-envelope"></i> </span>
+            <span>
+              <b>Support</b>
+              <small>support@yourwebsite.com</small>
+            </span></a>
+        </div>
+        <div class="contact-form-box">
+          <h1 class="contact-title">Contact <span class="orange">Us</span>
+        </h1>
+        <form class="contact-form dark-contact-form" id="contactForm" novalidate>
+          <div class="field-row">
+            <label class="field">
+              <span>Your Name (*)</span>
+              <input type="text" name="name" required>
+            </label>
+            <label class="field">
+              <span>Your Email (*)</span>
+              <input type="email" name="email" required>
+            </label>
+          </div>
+          <div class="field-row">
+            <label class="field">
+              <span>Phone</span>
+              <input type="tel" name="phone">
+            </label>
+            <label class="field">
+              <span>Department</span>
+              <select name="department">
+                <option>Business Department</option>
+                <option>Sales Department</option>
+                <option>Support Department</option>
+              </select>
+            </label>
+          </div>
+          <label class="field full-field">
+            <span>Your Question</span>
+            <textarea name="question" required>
+            </textarea>
+          </label>
+          <p class="form-alert" id="contactAlert">Please fill all required fields correctly.</p>
+          <button type="submit" class="contact-submit">Submit</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <section class="foot-top">
+    <div class="foot-top-box">
+      <div class="top-col">
+        <p class="top-small">Pre-sale Questions</p>
+        <h3 class="top-big">help@xtrabicycle.com</h3>
+      </div>
+      <div class="top-col line-col">
+        <p class="top-small">Call Us</p>
+        <h3 class="top-big">+1800 2345 6789</h3>
+      </div>
+      <div class="top-col line-col">
+        <p class="top-small">Our Location</p>
+        <h3 class="top-big">#2354, Beverly Hills, LA</h3>
+      </div>
+    </div>
+  </section>
+  <footer class="main-foot">
+    <div class="foot-grid">
+      <div class="foot-col">
+        <h4 class="foot-head">Office</h4>
+        <div class="head-line">
+        </div>
+        <ul class="office-list">
+          <li>
+            <i class="fa-solid fa-location-dot"></i>121 King Street, NewYork</li>
+            <li>
+              <i class="fa-solid fa-phone"></i>+1 (800) 333 44 55</li>
+              <li>
+                <i class="fa-solid fa-envelope"></i>xtrabike@gmail.com</li>
+                <li>
+                  <i class="fa-solid fa-calendar-days"></i>+1 (800) 333 99 88</li>
+                  <li>
+                    <i class="fa-solid fa-x"></i>@xtra_bikeshop</li>
+                  </ul>
+                </div>
+                <div class="foot-col">
+                  <h4 class="foot-head">News</h4>
+                  <div class="head-line">
+                  </div>
+                  <div class="news-item">
+                    <img src="./image/3d-bicycle-minimalist-design (2).jpg" class="news-thumb" alt="">
+                    <div>
+                      <p class="n-title">Top 7 Must have Accessories for Every Cyclist</p>
+                      <p class="n-meta">10 June 2024&nbsp;&nbsp;24</p>
+                    </div>
+                  </div>
+                  <div class="news-item">
+                    <img src="./image/close-up-minimal-bicycle-outdoor.jpg" class="news-thumb" alt="">
+                    <div>
+                      <p class="n-title">How to Choose the Perfect Bike for Your Lifestyle</p>
+                      <p class="n-meta">10 June 2024&nbsp;&nbsp;18</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="foot-col">
+                  <h4 class="foot-head">Shortcuts</h4>
+                  <div class="head-line">
+                  </div>
+                  <div class="links-grid">
+                    <ul>
+                      <li>
+                        <i class="fa-solid fa-angle-right"></i>Home</li>
+                        <li>
+                          <i class="fa-solid fa-angle-right"></i>City Store</li>
+                          <li>
+                            <i class="fa-solid fa-angle-right"></i>News</li>
+                            <li>
+                              <i class="fa-solid fa-angle-right"></i>Clients</li>
+                              <li>
+                                <i class="fa-solid fa-angle-right"></i>Support</li>
+                              </ul>
+                              <ul>
+                                <li>
+                                  <i class="fa-solid fa-angle-right"></i>Maps</li>
+                                  <li>
+                                    <i class="fa-solid fa-angle-right"></i>Careers</li>
+                                    <li>
+                                      <i class="fa-solid fa-angle-right"></i>Employees</li>
+                                      <li>
+                                        <i class="fa-solid fa-angle-right"></i>Teams</li>
+                                        <li>
+                                          <i class="fa-solid fa-angle-right"></i>Privacy</li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                    <div class="foot-col">
+                                      <h4 class="foot-head">Working Hours</h4>
+                                      <div class="head-line">
+                                      </div>
+                                      <p class="hours-text">Our support available to help you<br>24 hours a day, seven days a week.</p>
+                                      <div class="hours-row">
+                                        <span>Monday to Friday</span>
+                                        <b>8AM - 4PM</b>
+                                      </div>
+                                      <div class="hours-row">
+                                        <span>Saturday</span>
+                                        <b>8AM - 1PM</b>
+                                      </div>
+                                      <div class="hours-row">
+                                        <span>Sunday</span>
+                                        <b>Closed</b>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </footer>
+                                <div class="copy-bar">
+                                  <p>Copyright آ© 2026 Xtra Theme. All Rights Reserved.</p>
+                                  <div class="pay-logos"> <i class="fa-brands fa-cc-mastercard"></i> <i class="fa-brands fa-cc-paypal"></i> <i class="fa-brands fa-cc-amex"></i> <i class="fa-brands fa-cc-discover"></i> <i class="fa-brands fa-cc-amazon-pay"></i> <i class="fa-brands fa-cc-visa"></i>
+                                  </div>
+                                </div>
+                                <script src="./js/scrpit.js">
+                                </script>
+                              </body>
+                            </html>
+

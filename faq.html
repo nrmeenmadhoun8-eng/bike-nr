@@ -1,0 +1,252 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Bike Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="top-bar">
+        <div class="top-left">envato market</div>
+        <div class="top-text">Limited time offer, Buy XTRA WordPress theme only $39</div>
+        <a href="#" class="top-btn">Download XTRA Theme</a>
+      </div>
+      <div class="nav-bar">
+        <a href="./index.html" class="logo">
+          <img src="./image/icons8-bike-48.png" alt="">XTRA</a>
+          <button class="menu-toggle" id="menuToggle"> <i class="fa-solid fa-bars"></i> </button>
+          <ul class="menu" id="mainMenu">
+            <li>
+              <a href="./index.html">Home</a>
+            </li>
+            <li class="has-drop">
+              <a href="./about.html">About <i class="fa-solid fa-angle-down"></i> </a>
+          <div class="drop-menu">
+            <a href="./about.html">Submenu 1</a>
+            <a href="./services.html">Dropdown menu</a>
+            <a href="./faq.html">Submenu 2</a>
+          </div>
+        </li>
+        <li>
+          <a href="./services.html">Services</a>
+        </li>
+        <li>
+          <a href="./blog.html">Blog</a>
+        </li>
+        <li>
+          <a href="./shop.html">Shop</a>
+        </li>
+        <li>
+          <a class="active" href="./faq.html">FAQ</a>
+        </li>
+        <li>
+          <a href="./contact.html">Contact</a>
+        </li>
+      </ul>
+      <div class="nav-right">
+        <a href="./contact.html" class="help-btn"> <i class="fa-solid fa-bicycle"></i> Help &amp; Service</a>
+          <a href="#" class="icon-btn"> <i class="fa-regular fa-heart"></i> </a>
+          <a href="./shop.html" class="icon-btn"> <i class="fa-solid fa-bag-shopping"></i> </a>
+        </div>
+      </div>
+    </header>
+    <main class="faq-page">
+      <section class="faq-hero">
+        <div class="faq-left move-left">
+          <div class="faq-path"> <i class="fa-solid fa-house"></i> <i class="fa-solid fa-bicycle"></i>
+            <span>FAQ</span>
+          </div>
+          <h1 class="faq-title">Common <span class="orange">Questions</span>
+        </h1>
+        <p class="faq-text">Please read questions bellow and if you can not find your answer please send us your question, we will answer you as soon as possible.</p>
+        <div class="faq-small">
+          <span> <i class="fa-solid fa-question"></i> </span>
+          <b>F.A.Qs</b>
+        </div>
+      </div>
+      <div class="faq-art move-right">
+        <div class="bike-badge"> <i class="fa-solid fa-bicycle"></i> </div>
+        <div class="bubble-text">BIKE<br>SHOP<br>FAQ</div>
+      </div>
+    </section>
+    <section class="faq-content">
+      <div class="faq-list faq-card move-left">
+        <div class="faq-box open">
+          <button class="faq-question">What types of bikes do you sell? <i class="fa-solid fa-angle-up"></i> </button>
+      <p class="faq-answer">We offer road bikes, mountain bikes, hybrid bikes, electric bikes, kids' bikes, and more to suit all cycling needs. Absolutely! Test rides are available for most models in our store to ensure the right fit and comfort. We stock top brands including Trek, Giant, Specialized, Cannondale, and more. We allow returns or exchanges within 14 days of purchase, provided the bike is in like-new condition.</p>
+    </div>
+    <div class="faq-box">
+      <button class="faq-question">Can I test ride a bike before buying it? <i class="fa-solid fa-angle-down"></i> </button>
+  <p class="faq-answer">Yes, you can test ride available models in store before you choose the best bike for you.</p>
+</div>
+<div class="faq-box">
+  <button class="faq-question">Do you sell used or refurbished bikes? <i class="fa-solid fa-angle-down"></i> </button>
+<p class="faq-answer">Yes, selected refurbished bikes are available after full inspection and service.</p>
+</div>
+<div class="faq-box">
+  <button class="faq-question">How do I choose the right size bike? <i class="fa-solid fa-angle-down"></i> </button>
+<p class="faq-answer">Our team helps you choose the frame size based on height, comfort, and riding style.</p>
+</div>
+<div class="faq-box">
+  <button class="faq-question">What brands of bikes do you carry? <i class="fa-solid fa-angle-down"></i> </button>
+<p class="faq-answer">We carry trusted city, mountain, sport, and electric bike brands.</p>
+</div>
+<div class="faq-box">
+  <button class="faq-question">What's your return or exchange policy on bikes? <i class="fa-solid fa-angle-down"></i> </button>
+<p class="faq-answer">Returns or exchanges are accepted within 14 days if the bike is in like-new condition.</p>
+</div>
+</div>
+<form class="faq-form contact-form dark-contact-form move-right" id="contactForm" novalidate>
+  <div class="field-row">
+    <label class="field">
+      <span>Your Name (*)</span>
+      <input type="text" name="name" required>
+    </label>
+    <label class="field">
+      <span>Your Email (*)</span>
+      <input type="email" name="email" required>
+    </label>
+  </div>
+  <label class="field full-field">
+    <span>Subject</span>
+    <input type="text" name="subject" required>
+  </label>
+  <label class="field full-field">
+    <span>Department</span>
+    <select name="department">
+      <option>Business Department</option>
+      <option>Sales Department</option>
+      <option>Support Department</option>
+    </select>
+  </label>
+  <label class="field full-field">
+    <span>Your Question</span>
+    <textarea name="question" required>
+    </textarea>
+  </label>
+  <p class="form-alert" id="contactAlert">Please fill all required fields correctly.</p>
+  <button type="submit" class="contact-submit">Ask</button>
+</form>
+</section>
+</main>
+<section class="foot-top">
+  <div class="foot-top-box">
+    <div class="top-col">
+      <p class="top-small">Pre-sale Questions</p>
+      <h3 class="top-big">help@xtrabicycle.com</h3>
+    </div>
+    <div class="top-col line-col">
+      <p class="top-small">Call Us</p>
+      <h3 class="top-big">+1800 2345 6789</h3>
+    </div>
+    <div class="top-col line-col">
+      <p class="top-small">Our Location</p>
+      <h3 class="top-big">#2354, Beverly Hills, LA</h3>
+    </div>
+  </div>
+</section>
+<footer class="main-foot">
+  <div class="foot-grid">
+    <div class="foot-col">
+      <h4 class="foot-head">Office</h4>
+      <div class="head-line">
+      </div>
+      <ul class="office-list">
+        <li>
+          <i class="fa-solid fa-location-dot"></i>121 King Street, NewYork</li>
+          <li>
+            <i class="fa-solid fa-phone"></i>+1 (800) 333 44 55</li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>xtrabike@gmail.com</li>
+              <li>
+                <i class="fa-solid fa-calendar-days"></i>+1 (800) 333 99 88</li>
+                <li>
+                  <i class="fa-solid fa-x"></i>@xtra_bikeshop</li>
+                </ul>
+              </div>
+              <div class="foot-col">
+                <h4 class="foot-head">News</h4>
+                <div class="head-line">
+                </div>
+                <div class="news-item">
+                  <img src="./image/3d-bicycle-minimalist-design (2).jpg" class="news-thumb" alt="">
+                  <div>
+                    <p class="n-title">Top 7 Must have Accessories for Every Cyclist</p>
+                    <p class="n-meta">10 June 2024&nbsp;&nbsp;24</p>
+                  </div>
+                </div>
+                <div class="news-item">
+                  <img src="./image/close-up-minimal-bicycle-outdoor.jpg" class="news-thumb" alt="">
+                  <div>
+                    <p class="n-title">How to Choose the Perfect Bike for Your Lifestyle</p>
+                    <p class="n-meta">10 June 2024&nbsp;&nbsp;18</p>
+                  </div>
+                </div>
+              </div>
+              <div class="foot-col">
+                <h4 class="foot-head">Shortcuts</h4>
+                <div class="head-line">
+                </div>
+                <div class="links-grid">
+                  <ul>
+                    <li>
+                      <i class="fa-solid fa-angle-right"></i>Home</li>
+                      <li>
+                        <i class="fa-solid fa-angle-right"></i>City Store</li>
+                        <li>
+                          <i class="fa-solid fa-angle-right"></i>News</li>
+                          <li>
+                            <i class="fa-solid fa-angle-right"></i>Clients</li>
+                            <li>
+                              <i class="fa-solid fa-angle-right"></i>Support</li>
+                            </ul>
+                            <ul>
+                              <li>
+                                <i class="fa-solid fa-angle-right"></i>Maps</li>
+                                <li>
+                                  <i class="fa-solid fa-angle-right"></i>Careers</li>
+                                  <li>
+                                    <i class="fa-solid fa-angle-right"></i>Employees</li>
+                                    <li>
+                                      <i class="fa-solid fa-angle-right"></i>Teams</li>
+                                      <li>
+                                        <i class="fa-solid fa-angle-right"></i>Privacy</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                  <div class="foot-col">
+                                    <h4 class="foot-head">Working Hours</h4>
+                                    <div class="head-line">
+                                    </div>
+                                    <p class="hours-text">Our support available to help you<br>24 hours a day, seven days a week.</p>
+                                    <div class="hours-row">
+                                      <span>Monday to Friday</span>
+                                      <b>8AM - 4PM</b>
+                                    </div>
+                                    <div class="hours-row">
+                                      <span>Saturday</span>
+                                      <b>8AM - 1PM</b>
+                                    </div>
+                                    <div class="hours-row">
+                                      <span>Sunday</span>
+                                      <b>Closed</b>
+                                    </div>
+                                  </div>
+                                </div>
+                              </footer>
+                              <div class="copy-bar">
+                                <p>Copyright آ© 2026 Xtra Theme. All Rights Reserved.</p>
+                                <div class="pay-logos"> <i class="fa-brands fa-cc-mastercard"></i> <i class="fa-brands fa-cc-paypal"></i> <i class="fa-brands fa-cc-amex"></i> <i class="fa-brands fa-cc-discover"></i> <i class="fa-brands fa-cc-amazon-pay"></i> <i class="fa-brands fa-cc-visa"></i>
+                                </div>
+                              </div>
+                              <script src="./js/scrpit.js">
+                              </script>
+                            </body>
+                          </html>
+
